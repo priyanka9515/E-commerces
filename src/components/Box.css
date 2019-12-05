@@ -1,0 +1,17 @@
+.box {
+  height: 300px;
+  width: 100px;
+  text-align: stretch;
+  align-items: flex-start;
+  margin-left: 50px;
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px;
+  grid-template-rows: auto;
+  grid-gap: 195px;
+  grid-auto-rows: auto;
+
+  /* grid-template-column: 1fr 1fr 1fr; */
+}
+.body {
+  background-color: chartreuse;
+}
