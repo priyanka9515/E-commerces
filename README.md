@@ -1,3 +1,27 @@
+E-Commerce : Cool,It's a clone of various e-commerce websites
+
+Application on which users can pick a product from products page and can add them to cart
+Pages created :
+Product page list
+
+Product page
+
+login page
+
+register page
+
+Tools used:
+
+ReactJs
+
+Faker
+
+javascript
+
+Bootstrap from css
+
+html and js used as JSX .
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
