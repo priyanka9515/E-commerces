@@ -1,30 +1,30 @@
-import React, { Component } from "react";
-import ProductList from "./components/ProductList.js";
-import Navbar from "./Navbar";
-import { Route, BrowserRouter as Router } from "react-router-dom";
+import React from "react";
 import "./App.css";
-// import * as serviceWorker from "./serviceWorker";
-import signin from "./signin";
-import Signup from "./signup";
-import item from "./item";
+import Navbar from "./components/Navbar/Navbar";
+import Home from "./components/Home/Home";
+import List from "./components/ProductsList/List";
+import Item from "./components/Product/Item";
+import Cart from "./components/Cart/Cart";
+import { BrowserRouter, Route } from "react-router-dom";
 
-import "bootstrap/dist/css/bootstrap.min.css";
-
-class container extends Component {
-  render() {
-    return (
-      <div className="Navbar">
-        <Router>
-          <Navbar />
-          <Route path="/signin" component={signin} />
-          <Route path="/signup" exact component={Signup} />
-          <ProductList />
-          <Route path="/item" exact component={item} />
-        </Router>
-        );
-      </div>
-    );
-  }
+function App() {
+  return (
+    <div className="App">
+      {/* <h2>Hello World!</h2> */}
+      {/* navbar
+          categories
+          search
+          sign in
+          cart */}
+      <BrowserRouter>
+        <Navbar />
+        <Route exact path="/" component={Home} />
+        <Route path="/cart" component={Cart} />
+        {/* <Route path='/list' component={List} /> */}
+        <Route path="/item" component={Item} />
+      </BrowserRouter>
+    </div>
+  );
 }
 
-export default container;
+export default App;
